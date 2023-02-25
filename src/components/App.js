@@ -17,7 +17,12 @@ function App() {
     if (correct) {
       setScore((score) => score + 1);
     }
+    if (correct === 100) {
+      setQuestions(quiz);
+    }
   }
+
+
 
   return (
     <main>
